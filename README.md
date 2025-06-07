@@ -30,7 +30,7 @@ Representa una **hoja de cálculo completa**, organizada como una matriz bidimen
 Actúa como el **intermediario entre la vista (`HojaView`) y el modelo (`ListaHojas` y `Hoja`)**. Su rol principal es:
 
 * Gestionar las **interacciones del usuario** con la interfaz (edición de celdas, aplicación de fórmulas).
-* **Evaluar fórmulas** ingresadas en las celdas, incluyendo la lógica para el parseo de referencias a celdas (ej. "B3") y la realización de operaciones (suma, multiplicación).
+* **Evaluar fórmulas** ingresadas en las celdas, incluyendo la lógica para el parseo de referencias a celdas (ej. "B3") y la realización de operaciones.
 * **Sincronizar el modelo y la vista**, asegurando que los cambios en una se reflejen en la otra.
 * Configurar los `Listeners` para la tabla y el campo de fórmula, permitiendo la reactividad de la aplicación.
 
