@@ -2,7 +2,7 @@
 
 ---
 
-Este proyecto implementa una **aplicación de hoja de cálculo básica en Java Swing** con funcionalidades esenciales como la gestión de múltiples hojas, edición de celdas, soporte para fórmulas simples (suma y multiplicación), y un sistema de dependencias para la actualización automática de valores. Además, incluye una implementación de una tabla hash.
+Este proyecto implementa una **aplicación de hoja de cálculo básica en Java Swing** con funcionalidades esenciales como la gestión de múltiples hojas, edición de celdas, soporte para fórmulas simples (suma, resta, multiplicación y división), y un sistema de dependencias para la actualización automática de valores. Además, incluye una implementación de una tabla hash.
 
 ## Estructura del Proyecto (Clases)
 
@@ -99,19 +99,10 @@ Esto abrirá la ventana principal de la aplicación de hoja de cálculo.
 
 * **Múltiples Hojas:** Gestiona diferentes hojas de cálculo a través de pestañas.
 * **Edición de Celdas:** Permite ingresar valores directos o fórmulas en las celdas.
-* **Fórmulas Básicas:** Soporta fórmulas de suma (`=A1+B2`) y multiplicación (`=A1*B2`).
+* **Fórmulas Básicas:** Soporta fórmulas de suma (`=A1+B2`) , resta (`=A1-B2`), multiplicación (`=A1*B2`) y división (`=A1/B2`).
 * **Actualización Automática:** Las celdas se actualizan automáticamente cuando sus dependencias cambian.
 * **Gestión de Hojas:** Opciones de menú para insertar, eliminar y renombrar hojas.
 * **Tabla Hash:** Una ventana adicional para interactuar con una implementación básica de una tabla hash.
-
----
-
-## Limitaciones
-
-* **Fórmulas Simplificadas:** Actualmente, solo soporta operaciones de suma, resta, multiplicación y división entre dos referencias de celda. No incluye funciones complejas, rangos o manejo de errores avanzado en fórmulas.
-* **Interfaz Gráfica Básica:** La interfaz de usuario es funcional pero simple, sin características avanzadas de formateo o gráficos.
-* **Persistencia Limitada:** Aunque `Hoja` es serializable, no se ha implementado la funcionalidad para guardar y cargar el estado completo de la `ListaHojas` en disco.
-* **Manejo de Errores en Fórmulas:** La evaluación de fórmulas es básica y puede retornar "ERROR" para entradas inválidas.
 
 ---
 
